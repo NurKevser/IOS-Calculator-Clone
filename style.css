@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.container{
+    background-color:black;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,4rem) ;
+    grid-template-rows: minmax(120px, auto) repeat(5, 4rem);
+    grid-gap: 0.5rem;
+}
+button {
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color:rgb(34, 34, 34);
+    color: #efefef;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+button:hover {
+    background: #555555;
+}
+.divide, .times, .minus, .plus ,.equal {
+    background: orange;
+}
+.divide:hover, .times:hover, .minus:hover, .plus:hover ,.equal:hover{
+    background-color: #efefef;
+    color: orange;
+}
+
+.all-clear, .negate, .percent {
+    background: rgb(155, 155, 155);
+}
+.all-clear:hover, .negate:hover, .percent:hover {
+    background-color:rgb(196, 196, 196);
+}
+
+ .zero {
+    grid-column: span 2;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 0.5rem;
+    padding-left: 1.5rem;
+}
+.result {
+    grid-column: 1/-1;
+    display: flex;
+    align-items: flex-end;
+    justify-self: right;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    font-size: 2rem;
+}
+input {
+    outline: none;
+    border: none;
+    background: black;
+    color:#efefef;
+    text-align: right;
+    font-size: 2rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
