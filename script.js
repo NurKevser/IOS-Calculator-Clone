@@ -73,4 +73,4 @@ document.querySelector(".operator[op=clear]").onclick = () => {
     buffer.length = 0;
 }
 
-document.querySelector("operator[op=negate]").onclick = () => input.value = -parseFloat(input.value);
+document.querySelector(".operator[op=negate]").onclick = () => input.value = -parseFloat(input.value);
